@@ -64,6 +64,7 @@
             android:layout_marginRight="15dp"
             android:layout_marginBottom="15dp"
             android:backgroundTint="@color/blue"
+            android:onClick="signUp"
             />
         <Button
             android:layout_width="match_parent"
