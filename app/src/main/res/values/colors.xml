@@ -10,4 +10,5 @@
     <color name="gray1">#EEEEEE</color>
     <color name="gray2">#9E9E9E</color>
     <color name="blue">#1565C0</color>
+    <color name="transparent_blue">#00c0e6</color>
 </resources>
