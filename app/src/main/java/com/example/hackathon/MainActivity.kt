@@ -8,11 +8,11 @@ import android.view.View
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.login_page)
+        setContentView(R.layout.activity_main)
     }
     fun signUp(view: View)
     {
-        setContentView(R.layout.activity_main)
+        setContentView(R.layout.activity_sign_up)
     }
     fun signIn(view: View)
     {
