@@ -9,10 +9,14 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Hackathon">
-        <activity android:name=".thirdScreen"></activity>
-        <activity android:name=".OpeningPage" />
-        <activity android:name=".SignUpActivity" />
-        <activity android:name=".MainActivity">
+        <activity android:name=".screen3"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".OpeningPage"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".SignUpActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".MainActivity"
+            android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
