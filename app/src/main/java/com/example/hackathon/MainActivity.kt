@@ -16,10 +16,10 @@ class MainActivity : AppCompatActivity() {
     }
     fun signIn(view: View)
     {
-        setContentView(R.layout.activity_main)
+        setContentView(R.layout.activity_sign_in)
     }
     fun skip(view: View)
     {
-        setContentView(R.layout.activity_main)
+        setContentView(R.layout.activity_opening_page)
     }
 }
