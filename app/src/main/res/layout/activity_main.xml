@@ -53,7 +53,8 @@
             android:paddingLeft="100dp"
             android:paddingRight="100dp"
             android:text="Sign In"
-            android:textAllCaps="true" />
+            android:textAllCaps="true"
+            android:onClick="signIn"/>
 
         <Button
             android:layout_width="match_parent"
@@ -81,6 +82,7 @@
             android:layout_marginRight="15dp"
             android:layout_marginBottom="15dp"
             android:backgroundTint="@color/blue"
+            android:onClick="skip"
             />
 
     </LinearLayout>
