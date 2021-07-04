@@ -20,6 +20,6 @@ class MainActivity : AppCompatActivity() {
     }
     fun skip(view: View)
     {
-        setContentView(R.layout.activity_opening_page)
+        setContentView(R.layout.activity_screen3)
     }
 }
