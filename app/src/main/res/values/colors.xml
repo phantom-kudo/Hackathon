@@ -11,4 +11,6 @@
     <color name="gray2">#9E9E9E</color>
     <color name="blue">#1565C0</color>
     <color name="transparent_blue">#00c0e6</color>
+    <color name="blue_theme">#E6F7FC</color>
+    <color name="button_blue">#5c79ec</color>
 </resources>

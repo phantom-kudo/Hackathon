@@ -16,9 +16,6 @@
             android:name=".screen3"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".OpeningPage"
-            android:screenOrientation="portrait" />
-        <activity
             android:name=".SignUpActivity"
             android:screenOrientation="portrait" />
         <activity

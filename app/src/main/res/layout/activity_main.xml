@@ -1,89 +1,155 @@
 <?xml version="1.0" encoding="utf-8"?>
+
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
-    <ImageView
-        android:src="@drawable/login_background"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:scaleType="centerCrop" />
-    <ImageView
-        android:src="@drawable/doctor_logo"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:layout_centerVertical="true"
-        android:scaleType="centerCrop"
-        />
 
-    <ImageButton
-        android:src="@drawable/ic_baseline_share_24"
+    <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:padding="16dp"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentTop="true"
-        android:background="@color/transparent_blue" />
+        android:scaleType="centerCrop"
+        android:src="@drawable/login_background" />
+
+    <LinearLayout
+        android:id="@+id/logo_section"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/main_logo"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:padding="16dp"
+            android:src="@drawable/main_logo" />
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"/>
+        <ImageButton
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:background="@color/transparent_blue"
+            android:padding="16dp"
+            android:src="@drawable/ic_baseline_share_24" />
+    </LinearLayout>
     <ImageView
-        android:src="@drawable/main_logo"
-        android:layout_width="75dp"
-        android:layout_height="75dp"
-        android:padding="16dp"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentTop="true"/>
+        android:id="@+id/covid3"
+        android:layout_width="wrap_content"
+        android:layout_height="300dp"
+        android:layout_below="@id/logo_section"
+        android:src="@drawable/covid3" />
 
 
     <LinearLayout
-        android:layout_width="wrap_content"
+
+        android:id="@+id/information_section"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
         android:layout_centerHorizontal="true"
         android:layout_centerVertical="true"
-        android:paddingTop="160dp">
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:orientation="vertical"
+        android:paddingBottom="20dp">
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/sign_in_email"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Email"
+            android:paddingTop="5dp"
+            android:textColorHint="@color/white">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textEmailAddress"
+                android:textColor="@color/white"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/sign_in_password"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Password"
+            android:paddingTop="5dp"
+            android:textColorHint="@color/white"
+            >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="numberPassword"
+                android:textColor="@color/white"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/buttons"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/information_section"
+        android:orientation="vertical"
+        >
 
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_margin="15dp"
-            android:backgroundTint="@color/blue"
+            android:backgroundTint="@color/white"
             android:paddingLeft="100dp"
             android:paddingRight="100dp"
             android:text="Sign In"
             android:textAllCaps="true"
-            android:onClick="signIn"/>
+            android:textColor="@color/blue" />
 
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Sign Up"
             android:layout_gravity="center"
-            android:textAllCaps="true"
-            android:paddingLeft="100dp"
-            android:paddingRight="100dp"
             android:layout_marginLeft="15dp"
             android:layout_marginRight="15dp"
             android:layout_marginBottom="15dp"
             android:backgroundTint="@color/blue"
             android:onClick="signUp"
-            />
+            android:paddingLeft="100dp"
+            android:paddingRight="100dp"
+            android:text="Sign Up"
+            android:textAllCaps="true" />
+
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Skip"
             android:layout_gravity="center"
-            android:textAllCaps="true"
-            android:paddingLeft="100dp"
-            android:paddingRight="100dp"
             android:layout_marginLeft="15dp"
             android:layout_marginRight="15dp"
             android:layout_marginBottom="15dp"
             android:backgroundTint="@color/blue"
             android:onClick="skip"
-            />
+            android:paddingLeft="100dp"
+            android:paddingRight="100dp"
+            android:text="Skip"
+            android:textAllCaps="true" />
 
     </LinearLayout>
+    <View
+        android:layout_below="@id/buttons"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:outlineAmbientShadowColor="@color/white"
+        />
 </RelativeLayout>
